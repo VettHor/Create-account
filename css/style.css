@@ -1,0 +1,268 @@
+body {
+    display: table;
+    clear: both;
+    content: "";
+    display: flex;
+    background: linear-gradient(
+        to right,
+        #B0D8DA 0%,
+        #B0D8DA 38%,
+        #FFF 38%,
+        #FFF 100%
+    );
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 14px;
+}
+
+.blocks {
+    margin-top: 43px;
+    margin-left: 50px;
+    width: 1000px;
+    height: 630px;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFF;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+
+.right-side {
+    margin-left: 0;
+}
+
+.header {
+    margin-left: 90px;
+    margin-top: 50px;
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-style: bold;
+    text-shadow: 2px 2px 2px #000;
+}
+
+section {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.btn {
+    display: block;
+    font-size: 21px;
+    font-family: 'Poppins';
+    line-height: 32px;
+    border: 2px solid #000;
+    width: 318px;
+    height: 67px;
+}
+
+.google-logo {
+    margin-top: 15px;
+    margin-left: -10px;
+    margin-right: 30px;
+    width: 36.43px;
+    height: 35px;
+}
+
+.facebook-logo {
+    margin-top: 6px;
+    margin-left: -20px;
+    margin-right: 20px;
+    width: 57px;
+    height: 53px;
+}
+
+.google-block, .facebook-block {
+    display: flex;
+    font-size: 21px;
+    color: #A6A6A6;
+    font-family: 'Poppins';
+    line-height: 32px;
+    border: 2px solid #A6A6A6;
+    width: 318px;
+    height: 67px;
+    border-radius: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.google-block {
+    margin-left: -170px;
+}
+
+.covered-div {
+    position: relative;
+}
+
+.cover-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.facebook-block {
+    margin-left: 70px;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 54px;
+    vertical-align: top;
+    margin-left: 165px;
+    margin-top: 44px;
+    color: #A6A6A6;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+}
+
+.user-data {
+    font-family: 'Poppins';
+    font-size: 26px;
+    line-height: 39px;
+    vertical-align: top;
+    font-style: medium;
+    fill: solid;
+    stroke: solid;
+    color: #A6A6A6;
+}
+
+input {
+    width: 550px;
+    font-size: 24px;
+    font-family: 'Poppins';
+}
+
+form {
+    font-family: 'Poppins';
+    width: 550px;
+    padding: 32px;
+    margin-top: -30px;
+    margin-left: -50px;
+}
+
+.form-button {
+    position: absolute;
+    border-color: #FFF;
+    margin-top: 10px;  
+    width: 550px;
+    border-radius: 25px;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Poppins';
+    background-color: #B0D8DA;
+    line-height: 100%;
+    line-height: 74px;
+    transition: 0.5s;
+}
+
+.form-button:hover, 
+.form-button:checked {
+    color: #c1c3c4;
+    background-color: #eef0f0;
+}
+
+.form-button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: 0.5s;
+    background: #FFF;
+    bottom: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.form-title {
+    text-align: center;
+    margin: 0 0 32px 0;
+    font-weight: normal;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.form-label {
+    font-size: 24px;
+    font-family: 'Poppins';
+    position: relative;
+    top: -35px;
+    color: #9e9e9e;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 2px solid #B8B8B8;
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-input:focus {
+    border-bottom: 2px solid #B0D8DA;
+}
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label {
+    top: -75px;
+    font-size: 18px;
+    color:#B0D8DA;
+}
+
+h4 {
+    margin-top: 145px;
+    font-family: 'Poppins';
+    font-size: 26px;
+    font-style: medium;
+    color: #A6A6A6;
+    font-weight: 500;
+}
+
+.login {
+    color: #B0D8DA;
+}
+
+span {
+    position: absolute;
+    right: 15px;
+    transform: translate(0, -50%);
+    top: 50%;
+    cursor: pointer;
+}
+
+.fa {
+    margin-bottom: 20px;
+    color: #A6A6A6;
+}
+
+.eye {
+    position: absolute;
+}
+
+#hide1 {
+    display: none;
+}

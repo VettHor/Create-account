@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="x-icon" href="img/logo.jpg">
+        <title>Create Account</title>
+    </head>
+    <body>
+        <div class="left-side">
+            <img src="img/logo.jpg" alt="logo" class="logo">
+            <h1>Find 3D Objects, Mockups and<br>Illustrations here.</h1>
+            <img src="img/blocks.jpg" alt="blocks" class="blocks">
+        </div>
+        <div class="right-side">
+            <header class="header">
+                <h2>Create Account</h2>
+            </header>
+            <section>
+                <div class="covered-div">
+                    <a class="cover-link" href="https://www.google.com.ua"></a>
+                    <ul class="google-block">
+                        <li>
+                            <img src="img/google.jpg" alt="Google" class="google-logo">
+                        </li>
+                        <li>
+                            <p>Sign up with google</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="covered-div">
+                    <a class="cover-link" href="https://www.facebook.com"></a>
+                    <ul class="facebook-block">
+                        <li>
+                            <img src="img/facebook.jpg" alt="Google" class="facebook-logo">
+                        </li>
+                        <li>
+                            <p>Sign up with Facebook</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h3>- Or -</h3>
+            </section>
+            <section>
+                <form>
+                    <div class="form-group">
+                        <input class="form-input" placeholder=" ">
+                        <label class="form-label">Full name</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-input" placeholder=" ">
+                        <label class="form-label">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-input" type="password" placeholder=" " id="passwordInput">
+                        <span class="eye">
+                            <i class="fa fa-eye fa-lg" id="hide1" onclick="toggle()"></i>
+                            <i class="fa fa-eye-slash fa-lg" id="hide2" onclick="toggle()"></i>
+                        </span>
+                        <label class="form-label">Password</label>
+                    </div>
+                    <script>
+                        function toggle() {
+                           var passwordInput = document.getElementById("passwordInput");
+                           var hide1 = document.getElementById("hide1");
+                           var hide2 = document.getElementById("hide2");
+                           if(passwordInput.type === 'password') {
+                                passwordInput.type = "text";
+                                hide1.style.display = "block";
+                                hide2.style.display = "none";
+                           } else {
+                                passwordInput.type = "password";
+                                hide1.style.display = "none";
+                                hide2.style.display = "block"; 
+                           }
+                        }
+                    </script>
+                    <button class="form-button">Create Account</button>
+                    <h4>Already have an account? <a class="login" href="#">Login</a></h4>
+                </form>
+            </section>
+        </div>
+    </body>
+</html>
